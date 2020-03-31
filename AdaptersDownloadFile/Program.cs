@@ -258,9 +258,9 @@ namespace AdaptersDownloadFile
             var client = new RestClient("https://api.sendgrid.com/v3/mail/send");
             client.Timeout = -1;
             var request = new RestRequest(Method.POST);
-            request.AddFile("test.pdf",fileLocation);
+            //request.AddFile("test.pdf",fileLocation);
             request.AddHeader("Content-Type", "application/json");
-            request.AddHeader("Authorization", "Bearer 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");
+            request.AddHeader("Authorization", "Bearer SG.gt2bHR2c1hzbvKH7cQ.AaDjiIHpHmnTEaa2k7JIuUo4Q02LpE7Mh9G2V9gsgLI");
             request.AddHeader("Content-Type", "application/json");
             StringBuilder LoopDocumentList = new StringBuilder();
             StringBuilder LoopProjectInfoList = new StringBuilder();
